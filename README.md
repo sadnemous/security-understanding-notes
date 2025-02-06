@@ -1,6 +1,8 @@
 # WEB-SECURITY
 ![web-security](ws-1.png)
 
+## How SSL Works:
+Great Video: https://www.youtube.com/watch?v=0yw-z6f7Mb4
 
 ## SSL-HTTPS-TLS<br>
 [Source of Information - youtube.com ByteByteGo](https://www.youtube.com/watch?v=j9QmMEWmcfo)
@@ -72,7 +74,7 @@ TLS 1.3 is supported on all major browsers <br>
   - we decided to talk about TLS 1.2 because we reviewed TLS 1.3 as in optimization as with most optimizations it is a bit harder to explain that's why we chose TLS 1.2 Instead
 The Core Concepts in TLS 1.2 still applies to TLS 1.3 <br>
 <br>
- - The second final Point we'd like to discuss is that in the explanation above we use RSA for `Asymmetric Encryption` to securely exchange the symmetric `Session Key` <br>
+- The second final Point we'd like to discuss is that in the explanation above we use RSA for `Asymmetric Encryption` to securely exchange the symmetric `Session Key` <br>
    Again we chose to RSA because it is easy to understand <br>
    However `Asymmetric Encryption` is not the only way to share the `Session Key` between the client and the server <br>
    In fact in TLS 1.3 RSA is no longer supported as the a method for key exchange<br>
@@ -80,7 +82,7 @@ The Core Concepts in TLS 1.2 still applies to TLS 1.3 <br>
 
    <img src=DiffieHellman.png>
 
-   Tiffy helmet is complicated but in a nutshell it uses some advanced math involving large prime numbers to derive a share `Session Key` without ever transmitting a public key over the network <br>
+   Diffie-Hellman  is complicated but in a nutshell it uses some advanced math involving large prime numbers to derive a share `Session Key` without ever transmitting a public key over the network <br>
 <br>
 ### Conclusion<br>
    this is it for https you would like to learn more about system design check out our books and free Weekly Newsletter Please Subscribe you learn something new thank you so much and we'll see you next time<br>
