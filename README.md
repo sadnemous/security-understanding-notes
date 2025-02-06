@@ -1,5 +1,7 @@
 # WEB-SECURITY
-<img src="1.webp">
+![web-security](ws-1.png)
+
+
 ## SSL-HTTPS-TLS<br>
 [Source of Information - youtube.com ByteByteGo](https://www.youtube.com/watch?v=j9QmMEWmcfo)
 <img src="1.png">
@@ -18,9 +20,11 @@ TLS stands for <mark>T</mark>ransport <mark>L</mark>ayer <mark>S</mark>ecurity <
 If the encrypted data gets intercepted by a hacker all they could see is jumbled data<br>
 Let's take a look at how the TLs handshake works there are several steps<br>
 <br>
+
 #### Step 1: TCP Connection Establishment<br>
 Just like in the case for HTTP the browser establishes a TCP connection with the server<br>
 <br>
+
 #### Step 2: TLS Handshake - Hello<br>
 This is where the TLs handshake begins 
 The process sends a client hello to the server 
@@ -39,6 +43,7 @@ At this point the client has <br>
 - the client and server have agreed on the TLs version and <br>
 - the Cyber Suite to use<br>
 <br>
+
 #### Step 3: Client Key Exchange<br>
 This is the step where the client and the server come up with a share encryption key to use to encrypt data and <br>
 This is where the `Asymmetric Encryption` come into the picture<br>
@@ -51,6 +56,7 @@ With RSA the client generates an encryption key also called a `Session Key` encr
 The server receives the encrypted `Session Key` and decrypts it with its private key now both sides hold the `Session Key` and <br>
 This is where they enter step 4 of the TLs handshake <br>
 <br>
+
 #### Step 4: <br>
 They use the `Session Key` and agree upon cyber Suite to send encrypted data back and forth in a secure bi-directional Channel<br>
 Now you may ask why don't we just use `Asymmetric Key` for everything why switch to `Symmetric Encryption` at all<br>
