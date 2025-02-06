@@ -1,29 +1,29 @@
 ### <mark>Question-1</mark>: What are the different part of web security authentication, authorization, encryption (data at rest, data in transition)?
 In web security, the key components are
-- Authentication (verifying a user's identity).
-- Authorization (determining what a user can access once authenticated), and
-- Encryption which can be further divided into
-"data at rest" (encrypted data stored on a server) and
-o "data in transit" (encrypted data while being transferred across a network),
+- <b>Authentication:</b> (verifying a user's identity).
+- <b>Authorization:</b> (determining what a user can access once authenticated), and
+- <b>Encryption:</b> which can be further divided into
+  - <b>"data at rest"</b> (encrypted data stored on a server) and
+  - <b>"data in transit"</b> (encrypted data while being transferred across a network),
 each with its own specific security measures to protect information from unauthorized access.
-Authentication:
+#### Authentication:
 - Usernames and passwords: Basic method where users provide their credentials to log in.
 - Multi-factor authentication (MFA): Requires additional verification like a code sent to a phone besides the password.
 - Biometrics: Using physical characteristics like fingerprints or facial recognition for authentication.
 - Single Sign-On (SSO): Allows users to log in to multiple applications with a single set of credentials.
-Authorization:
+#### Authorization:
 - Access control lists (ACLs): Define which usens can access specific resources or functionalities within a system.
 - Role-based access control (RBAC): Assigns permissions based on a user's role within an organization.
 - Attribute-based access control (ABAC): Grants access based on dynamic attributes like location or time.
-Encryption:
+#### Encryption:
 - Data at rest:
-- Full disk encryption: Encrypting entire hard drives where data is stored.
-- Database encryption: Encrypting data within a database.
-- File system encryption: Encrypting individual files on a system.
+    - Full disk encryption: Encrypting entire hard drives where data is stored.
+    - Database encryption: Encrypting data within a database.
+    - File system encryption: Encrypting individual files on a system.
 - Data in transit:
-- Transport Layer Security (TLS): Secure protocol used to encrypt data transmitted over the internet (HTTPS).
-- Secure Shell (SSH): Securely managing remote servers.
-- Virtual Private Networks (VPNs): Creating a secure tunnel for data transmission over a public network.
+  - Transport Layer Security (TLS): Secure protocol used to encrypt data transmitted over the internet (HTTPS).
+  - Secure Shell (SSH): Securely managing remote servers.
+  - Virtual Private Networks (VPNs): Creating a secure tunnel for data transmission over a public network.
 
 ### <mark> Question-2</mark>: Where CyberArk safe is to be applied in terms of web security, is it Authentication, Authorization, Encryption?
 Explanation:
