@@ -1,8 +1,10 @@
 # WEB-SECURITY
-![web-security](ws-1.png)
+<img src=ws-1.png width=400>
+
 
 ## How SSL Works:
 Great Video: https://www.youtube.com/watch?v=0yw-z6f7Mb4
+![YoutTube](ssl.png)
 
 ## SSL-HTTPS-TLS<br>
 [Source of Information - youtube.com ByteByteGo](https://www.youtube.com/watch?v=j9QmMEWmcfo)
