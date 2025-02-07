@@ -205,3 +205,26 @@ mTLS builds on TLS by requiring mutual authentication, where both the client and
 
 
 
+## JWT
+Great Read : https://asardana.com/2017/05/20/jwt-token-based-authentication/ by [Aman Sardana](https://www.linkedin.com/in/amansardana22/)
+
+### Signature:
+
+### Flow:
+
+Below diagram shows how both the symmetric and asymmetric algorithm can be used together for authenticating the `API consumer` to the `API provider` using the Authentication Server. 
+
+`API consumer` (`microservice A`) generates the `HS256` JWT token using its own shared secret key and sends it over to the authentication server. 
+
+Authentication server validates the `HS256` JWT token using the shared secret key of `microservice A`. 
+
+If the token verification is successful, authentication server generates the `RS256`  JWT token using its own private key and sends it back to `microservice A`. 
+
+`Microservice A` sends the request to `microservice B` with `RS256` JWT token that it got from the authentication server. 
+
+`Microservice B` can authenticate the request from `microservice B` by validating the `RS256` JWT token using the public key of the authentication server. 
+
+Since `microservice A` has already established the trust with the authentication server, `microservice B` can trust the request from `microservice A` if the `RS256` token is successfully validated.
+
+![Flow Diagram](jwt-1.png)
+
